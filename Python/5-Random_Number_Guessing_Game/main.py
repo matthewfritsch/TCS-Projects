@@ -17,4 +17,4 @@ while guesses > 0 and choice != number:
 if choice == number:
     print("You got the number!")
 else:
-    print("You ran out of guesses! The number was ", number)
+    print("You ran out of guesses! The number was", number)
