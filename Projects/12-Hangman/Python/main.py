@@ -18,7 +18,6 @@ def findInWord(word, guess, dashes):
     for i in range(len(word)):
         if str(word[i]) == guess:
             dash = dash[:i] + guess + dash [i+1:]
-            wasFound = True
     printDashes(dash)
     return dash
 
