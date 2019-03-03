@@ -39,8 +39,6 @@ def runGame():
         dashes = dashes+"_"
     printDashes(dashes)
 
-    print(dashes, "and", word)
-
     while guesses > 0 and not dashes == word:
         guess = makeGuess("Make your guess: ", usedLetters)
         found = findInWord(word, guess, dashes)
