@@ -5,9 +5,9 @@
 
 ### If you're new to programming and need to know where to get started, I recommend hopping into the Python folder and beginning to read the README.md of each folder. Need a place to write your code? If you're running Windows, MacOS, or Linux, you can likely install PyCharm Community Edition for developing in Python, Eclipse for Java and/or C++, or use a text-editor and compile things through the terminal. If you're not interested in installing a development environment, or need something a bit quicker to access, I recommend http://repl.it for a really quick and friendly way to get into a development environment.
 
-##Interested in contributing, but unsure of how?
+## Interested in contributing, but unsure of how?
 
-###What you can do is hit "Fork" in the top right, and that will create a copy of the repository that you can contribute to. You can clone your repository using ```git clone https://github.com/<yourusername>/TCS-Projects.git``` to whatever directory you're in. Make the changes, and then use ```git add *```, ```git commit```, and ```git push``` to send it back to your Github repository. Finally, you can make a pull request at this repository which will give me the chance to read your code and add it to the repo.
+### What you can do is hit "Fork" in the top right, and that will create a copy of the repository that you can contribute to. You can clone your repository using ```git clone https://github.com/<yourusername>/TCS-Projects.git``` to whatever directory you're in. Make the changes, and then use ```git add *```, ```git commit```, and ```git push``` to send it back to your Github repository. Finally, you can make a pull request at this repository which will give me the chance to read your code and add it to the repo.
 
 
 ## Happy Coding!
