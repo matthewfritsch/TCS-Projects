@@ -83,6 +83,7 @@ public class starter{
             else if(choice.equals("3")){
                 System.out.println("You understood that these people were kind of scary, and when you begin running away you start to recognize where you are! You make it out of the forest back to your home!");
             }
-        }       
+        }
+        s.close();
     }
 }
