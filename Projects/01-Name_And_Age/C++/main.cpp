@@ -1,30 +1,29 @@
 
 #include <iostream>
-using namespace std;
+
 int main(){
-    string name;
+    std::string name;
     int age;
-    cout << "Please enter your name: ";
-    cin >> name;
-    cout << "Please enter your age: ";
-    cin >> age;
+    std::cout << "Please enter your name: ";
+    std::cin >> name;
+    std::cout << "Please enter your age: ";
+    std::cin >> age;
 
-    cout << name << " is " << age << " years old "<< endl;
+    std::cout << name << " is " << age << " years old "<< std::endl;
 
-    string name2 = "Peter Parker";
+    std::string name2 = "Peter Parker";
     int age2 = 17;
 
-    cout << name2 << " is " << age2 << " years old "<< endl;
+    std::cout << name2 << " is " << age2 << " years old "<< std::endl;
 
     if(age > age2){
-        cout << name << " is older than " << name2 << endl;
+        std::cout << name << " is older than " << name2 << std::endl;
     }
     else if(age < age2){
-        cout << name << " is younger than " << name2 << endl;
+        std::cout << name << " is younger than " << name2 << std::endl;
     }
     else{
-        cout << name << " is the same age as " << name2 << endl;
+        std::cout << name << " is the same age as " << name2 << std::endl;
     }
-
     return 0;
 }
