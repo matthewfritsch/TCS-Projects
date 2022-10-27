@@ -1,10 +1,17 @@
 use std::io;
 use std::io::Write;
 
-fn user_input_str() -> String {
+fn user_input_str() -> Result<String, io::Error> {
     let mut buff = String::new();
     let _rl_result = io::stdin().read_line(&mut buff);
-    buff.trim().to_string()
+    Ok(buff
+        .trim()
+        .to_string())
+}
+
+fn flush() {
+    io::stdout().flush()
+                .expect("stdout ran into an error while flushing.")
 }
 
 fn main() {
@@ -14,12 +21,12 @@ fn main() {
     println!("2. Follow the dirt trail over a hill");
     println!("3. Walk deeper into the forest.");
     print!("Type choice here (1,2,3): ");
-    io::stdout().flush().unwrap();
-    let mut choice = user_input_str();
+    flush();
+    let mut choice = user_input_str().expect("String could not be acquired from stdin.");
 
     while !(choice == "1" || choice == "2" || choice == "3") {
         print!("That is not a choice, please try 1, 2, or 3: ");
-        choice = user_input_str();
+        choice = user_input_str().expect("String could not be acquired from stdin.");
     }
 
     if choice == "1" {
@@ -29,13 +36,13 @@ fn main() {
         println!("2. Sneak past the bear");
         println!("3. Try to befriend the bear");
         print!("Please type the number for your choice: ");
-        io::stdout().flush().unwrap();
-        choice = user_input_str();
+        flush();
+        choice = user_input_str().expect("String could not be acquired from stdin.");
 
         while !(choice == "1" || choice == "2" || choice == "3") {
             print!("That is not a choice, please try 1, 2, or 3: ");
-            io::stdout().flush().unwrap();
-            choice = user_input_str();
+            flush();
+            choice = user_input_str().expect("String could not be acquired from stdin.");
         }
 
         if choice == "1" { 
@@ -55,13 +62,13 @@ fn main() {
         println!("2. Ride the horse");
         println!("3. Leave the hill");
         print!("Please type the number for your choice: ");
-        io::stdout().flush().unwrap();
-        choice = user_input_str();
+        flush();
+        choice = user_input_str().expect("String could not be acquired from stdin.");
 
         while !(choice == "1" || choice == "2" || choice == "3") {
             print!("That is not a choice, please try 1, 2, or 3: ");
-            io::stdout().flush().unwrap();
-            choice = user_input_str();
+            flush();
+            choice = user_input_str().expect("String could not be acquired from stdin.");
         }
 
         if choice == "1" {
@@ -81,13 +88,13 @@ fn main() {
         println!("2. Talk to the people");
         println!("3. Run away from the people");
         print!("Please type the number for your choice: ");
-        io::stdout().flush().unwrap();
-        choice = user_input_str();
+        flush();
+        choice = user_input_str().expect("String could not be acquired from stdin.");
 
         while !(choice == "1" || choice == "2" || choice == "3") {
             print!("That is not a choice, please try 1, 2, or 3: ");
-            io::stdout().flush().unwrap();
-            choice = user_input_str();
+            flush();
+            choice = user_input_str().expect("String could not be acquired from stdin.");
         }
         if choice == "1" {
             println!("There are so many people here, and they all attack you right back at the same time. You fall unconscious!");
